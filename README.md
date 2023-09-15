@@ -1,2 +1,2 @@
-# latihangithub
-latihan git hub bersama
+# WEB 1
+latihan github
