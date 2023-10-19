@@ -1,0 +1,51 @@
+#tabel-sayur {
+    border-collapse: separate;
+}
+
+.link {
+    color: maroon;
+    text-decoration: underline;
+}
+
+body {
+    background-color: white;
+}
+
+.wrapper {}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* Background content */
+    background-color: greenyellow;
+}
+
+.sidebar {
+    width: 400px;
+    height: 600px;
+    float: left;
+}
+
+.content {
+    width: 790px;
+    height: 600px;
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+#logo {
+    float: left;
+    width: 200px;
+    height: auto;
+    padding: 20px;
+}
+
+#logo img {
+    max-width: 100px;
+    height: auto;
+}
