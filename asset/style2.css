@@ -1,24 +1,28 @@
+body{
+    background-color: aquamarine;
+}
+
 .wrapper {
-    background: fuchsia;
 }
 
 .container {
-    width: 1100px;
-    margin: auto;
-    padding-right: 50px;
-    padding-left: 50px;
-    /* Background content */
-   background: burlywood;
+    width: 1200px;
+    margin: auto; 
+    padding-right: 10px;
+    padding-left: 10px;
+
+    background-color: antiquewhite;
 }
 
-.sidebar {
+.sidebar{
     width: 400px;
     height: 600px;
     float: left;
+
 }
 
-.content {
-    width: 790px;
+.content{
+    width: 800px;
     height: 600px;
     float: right;
 }
@@ -35,6 +39,26 @@
 }
 
 #logo img {
-    max-width: 100px;
+    max-width: 100%;
     height: auto;
+}
+
+#menu {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    float: right;
+    width: 960px;
+}
+#menu li {
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#menu li a {
+    font-family: 'Courier New', Courier, monospace;
+    color: blueviolet ;
+    font-size: 20px;
+    font-weight: 20px;
+    text-decoration: none;
 }
