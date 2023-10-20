@@ -1,0 +1,40 @@
+.wrapper {
+    background: fuchsia;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    /* Background content */
+   background: burlywood;
+}
+
+.sidebar {
+    width: 400px;
+    height: 600px;
+    float: left;
+}
+
+.content {
+    width: 790px;
+    height: 600px;
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+#logo {
+    float: left;
+    width: 200px;
+    height: auto;
+    padding: 20px;
+}
+
+#logo img {
+    max-width: 100px;
+    height: auto;
+}
