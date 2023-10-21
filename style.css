@@ -1,8 +1,7 @@
 #tabel-sayur {
     border-collapse: separate;
-    background-image:url(pemandangan.jpg);
+    background: url(pemandangan.jpg): 
     background-size: 300%;
-    background-repeat: no-repeat;
 }
 
 .link {
