@@ -1,17 +1,13 @@
-#tabel-sayur {
+#tabel-buah {
     border-collapse: separate;
-    background: url(pemandangan.jpg): 
-    background-size: 300%;
+    background-image: url(foto\ sayur.jpg);
 }
 
 .link {
-    color: maroon;
+    color: blueviolet;
     text-decoration: underline;
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: blueviolet;
-
+    background-color: green;
 }
-
