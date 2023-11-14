@@ -1,0 +1,76 @@
+body {
+    background:blue ;
+}
+.wrapper {
+
+}
+.container {
+    width: 1100px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    background-color:greenyellow ;
+}
+.sidebar {
+    width: 400px;
+    height: 550px;
+    float: left;
+}
+.content {
+    width: 800px;
+    float:right ;
+}
+.clear {
+    clear: both;
+}
+#logo {
+    float: left;
+    width: 200px;
+    height: auto;
+    padding: 20px;
+}
+#logo img {
+    max-width: 150px;
+    height: auto;
+}
+#menu {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    float: right;
+    width: 960px;
+}
+#menu li {
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#menu li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #dd0909;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.blog-single{
+    float: right;
+    max-width: 320px;
+    margin-right: 500px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.blog-single img {
+    width: 720px;
+    height: 400px;
+    object-fit: cover;
+}
+.recent-article {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.recent-article ul {
+    padding:0;
+    margin: 0;
+    list-style: none;
+}
