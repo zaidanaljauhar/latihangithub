@@ -1,8 +1,12 @@
-<?php
-
-$nama_depan = "Mohammad";
-$nama_belakang = "Zaidan";
-
-echo $nama_depan . "" . $nama_belakang;
-
-?>
+<html>
+    <head>
+        <title>
+            belajar PHP
+        </title>
+    </head>
+    <body>
+        <h1>
+            Selamat datang <?php echo "Zaidan";?>
+        </h1>
+    </body>
+</html>
