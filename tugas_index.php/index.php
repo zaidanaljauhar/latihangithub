@@ -3,15 +3,7 @@
 $nama = "zaidan";
 ?>
 
-<!DOCTYPE html>
+echo "Hallo, Selamat datang $zaidan </br>" 
+echo 'Hallo, Selamat datang $zaidan'
 
-<html>
-    <head>
-        <title>
-            belajar PHP
-        </title>
-    </head>
-    <body>
-        <h1>Hallo, selamat datang <?php $zaidan; ?></h1>
-    </body>
-</html>
+?>
