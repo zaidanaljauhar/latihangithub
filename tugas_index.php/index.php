@@ -1,6 +1,6 @@
 <?php
 
-$nama = "Eka";
+$nama = "zaidan";
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +12,6 @@ $nama = "Eka";
         </title>
     </head>
     <body>
-        <h1>Hallo, selamat datang <?php $nama; ?></h1>
+        <h1>Hallo, selamat datang <?php $zaidan; ?></h1>
     </body>
 </html>
