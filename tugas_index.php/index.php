@@ -1,17 +1,7 @@
 <?php
+$nama = "Omar";
 
-$nama = "Zaidan";
+echo "Hallo, Selamat Datang $nama </br>"; #petik dua
+echo 'Hallo, Selamat Datang $nama'; #petik satu
+
 ?>
-
-<!DOCTYPE html>
-
-<html>
-    <head>
-        <title>
-            Belajar PHP
-        </title>
-    </head>
-    <body>
-    <h1>Hallo, Selamat Datang <?php echo $Zaidan; ?></h1>
-    </body>
-</html>
