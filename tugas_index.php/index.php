@@ -1,9 +1,8 @@
 <?php
-Operator Aritmatika
-$x = 10 ;
-$y = 20;
- echo $x + $y ; Penjumlahan
- echo $x - $y ; Pengurangan
- echo $x * $y ; Perkalian
- echo $x / $y ; Pembagi
- echo $x % $y ; Modulus (sisa bagi)
+
+$nama_depan = "mohammad";
+$nama_belakang = "zaidan";
+
+echo $ nama_depan . "" . $nama_belakang;
+
+?>
