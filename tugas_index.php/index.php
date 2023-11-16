@@ -1,23 +1,19 @@
 <?php
 
-$x = 10;
-$x += 2; 
+var_dump(1 < 5) ;
+    echo "</br>"; //output baris ke-1
 
-$y = 10;
-$y -= 2;
+    var_dump(1 > 5) ;
+    echo "</br>"; //output baris ke-2
 
-$z = 10;
-$z /= 2;
+    var_dump(1 <= 5) ;
+    echo "</br>"; //output baris ke-3
 
-$a = 10;
-$a %= 2;
+    var_dump(1 >= 5) ;
+    echo "</br>"; //output baris ke-4
 
-$b = 10;
-$b .= 2;
+    var_dump(1 == 5) ;
+    echo "</br>"; //output baris ke-5
 
-
-echo $x . "</br>";
-echo $y . "</br>";
-echo $z . "</br>";
-echo $a . "</br>";
-echo $b . "</br>";
+    var_dump(1 != 5) ;
+    echo "</br>"; //output baris ke-6
