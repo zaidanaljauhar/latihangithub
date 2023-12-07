@@ -1,26 +1,41 @@
 <?php
 
 // Deklarasi variabel
-$tanggalSekarang = new DateTime();
-$tanggalMasaDepan;
+$hariIni = new DateTime();
 
-// Menampilkan tanggal hari ini
-echo "Tanggal hari ini: " . $tanggalSekarang->format("d-m-Y") . PHP_EOL;
+// Tanggal 500 hari yang lalu
+$tanggalLampau = $hariIni->sub(new DateInterval('P500D'));
 
-// Perulangan untuk 1000 hari yang akan datang
-for ($i = 0; $i < 1000; $i++) {
-    // Menambahkan 1 hari ke tanggal sekarang
-    $tanggalMasaDepan = $tanggalSekarang->add(new DateInterval("P1D"));
+// Perulangan untuk 500 hari lampau
+for ($i = 0; $i < 500; $i++) {
+    $tanggalMasaLampau = $tanggalLampau->add(new DateInterval('P1D'));
+    $hari = $tanggalMasaLampau->format('l');
+    $tanggal = $tanggalMasaLampau->format('d');
+    $bulan = $tanggalMasaLampau->format('m');
+    $tahun = $tanggalMasaLampau->format('Y');
 
-    // Menampilkan tanggal di masa depan
-    $hari = $tanggalMasaDepan->format("l");
-    $tanggal = $tanggalMasaDepan->format("d");
-    $bulan = $tanggalMasaDepan->format("m");
-    $tahun = $tanggalMasaDepan->format("Y");
-
-    // Menampilkan output HTML
     echo "<tr>";
-    echo "<td>" . $i + 1 . "</td>";
+    echo "<td>" . ($i + 1) . "</td>";
+    echo "<td>Masa Lampau</td>";
+    echo "<td>" . $hari . "</td>";
+    echo "<td>" . $tanggal . "</td>";
+    echo "<td>" . $bulan . "</td>";
+    echo "<td>" . $tahun . "</td>";
+    echo "</tr>";
+}
+
+// Perulangan untuk 1000 hari ke depan
+$tanggalMasaDepan = $hariIni;
+for ($i = 0; $i < 1000; $i++) {
+    $tanggalMasaDepan = $tanggalMasaDepan->add(new DateInterval('P1D'));
+    $hari = $tanggalMasaDepan->format('l');
+    $tanggal = $tanggalMasaDepan->format('d');
+    $bulan = $tanggalMasaDepan->format('m');
+    $tahun = $tanggalMasaDepan->format('Y');
+
+    echo "<tr>";
+    echo "<td>" . ($i + 1) . "</td>";
+    echo "<td>Masa Depan</td>";
     echo "<td>" . $hari . "</td>";
     echo "<td>" . $tanggal . "</td>";
     echo "<td>" . $bulan . "</td>";
@@ -34,13 +49,15 @@ for ($i = 0; $i < 1000; $i++) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Output Hari, Tanggal, Bulan, dan Tahun</title>
+    <title>Output Tanggal Masa Lampau dan Masa Depan</title>
 </head>
 <body>
-    <table border="1">
+    <h2>Output Tanggal</h2>
+    <table>
         <thead>
             <tr>
                 <th>No</th>
+                <th>Periode</th>
                 <th>Hari</th>
                 <th>Tanggal</th>
                 <th>Bulan</th>
@@ -48,10 +65,10 @@ for ($i = 0; $i < 1000; $i++) {
             </tr>
         </thead>
         <tbody>
-        <?php
-        // Menampilkan output PHP
-        ?>
+            <?php
+            // Menampilkan output PHP
+            ?>
         </tbody>
     </table>
 </body>
-</html>
+</html> 
