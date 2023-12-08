@@ -1,47 +1,15 @@
 <?php
 
-// Deklarasi variabel
-$hariIni = new DateTime();
+//deklarasi variabel 
+$harilahir = mktime(0,0,0,4,28,2002);
 
-// Tanggal 500 hari yang lalu
-$tanggalLampau = $hariIni->sub(new DateInterval('P500D'));
+//menampilkan tanggal lahir 
+$hari = date ("1",$minggu);
+$tanggal = date ("d",$28);
+$bulan = date ("m",$04);
+$tahun = date ("y",$2002);
 
-// Perulangan untuk 500 hari lampau
-for ($i = 0; $i < 500; $i++) {
-    $tanggalMasaLampau = $tanggalLampau->add(new DateInterval('P1D'));
-    $hari = $tanggalMasaLampau->format('l');
-    $tanggal = $tanggalMasaLampau->format('d');
-    $bulan = $tanggalMasaLampau->format('m');
-    $tahun = $tanggalMasaLampau->format('Y');
-
-    echo "<tr>";
-    echo "<td>" . ($i + 1) . "</td>";
-    echo "<td>Masa Lampau</td>";
-    echo "<td>" . $hari . "</td>";
-    echo "<td>" . $tanggal . "</td>";
-    echo "<td>" . $bulan . "</td>";
-    echo "<td>" . $tahun . "</td>";
-    echo "</tr>";
-}
-
-// Perulangan untuk 1000 hari ke depan
-$tanggalMasaDepan = $hariIni;
-for ($i = 0; $i < 1000; $i++) {
-    $tanggalMasaDepan = $tanggalMasaDepan->add(new DateInterval('P1D'));
-    $hari = $tanggalMasaDepan->format('l');
-    $tanggal = $tanggalMasaDepan->format('d');
-    $bulan = $tanggalMasaDepan->format('m');
-    $tahun = $tanggalMasaDepan->format('Y');
-
-    echo "<tr>";
-    echo "<td>" . ($i + 1) . "</td>";
-    echo "<td>Masa Depan</td>";
-    echo "<td>" . $hari . "</td>";
-    echo "<td>" . $tanggal . "</td>";
-    echo "<td>" . $bulan . "</td>";
-    echo "<td>" . $tahun . "</td>";
-    echo "</tr>";
-}
+echo "Tanggal lahir":"$minggu","28","04","2002"
 
 ?>
 
@@ -49,26 +17,10 @@ for ($i = 0; $i < 1000; $i++) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Output Tanggal Masa Lampau dan Masa Depan</title>
+    <title>output hari lahir</title>
 </head>
 <body>
-    <h2>Output Tanggal</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Periode</th>
-                <th>Hari</th>
-                <th>Tanggal</th>
-                <th>Bulan</th>
-                <th>Tahun</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            // Menampilkan output PHP
-            ?>
-        </tbody>
-    </table>
+    <h2>output hari lahir</h2>
+    <p>tanggal lahir: <?php echo $hari "minggu", $tanggal "28", $bulan "04", $tahun "2002"; ?></p>
 </body>
-</html> 
+</html>
