@@ -1,32 +1,29 @@
 <?php
+// Replace these values with your actual birthdate
+$birthYear = 2002;
+$birthMonth = 4;
+$birthDay = 28;
 
-function 
-hari_ulang_tahun($tahun,
-$bulan, $tanggal) {
-    //membuat timestamp dari tanggal ulang tahun menggunakan mktime
-$timestamp_ulang_tahun = mktime(0,0,0, $bulan, $tanggal, $tahun);
+$targetYear = 2030;
 
-    //mengambil nama hari dari timestamp
-$hari_ulang_tahun = date("1", $timestamp_ulang_tahun);  
+// Create a timestamp for the birthdate using mktime()
+$targetTimestamp = mktime(0, 0, 0, $birthMonth, $birthDay, $targetYear);
 
-    return 
-$hari_ulang_tahun;
-}
-
-//menentukan tanggal ulang tahun
-$tanggal_ulang_tahun = 28;
-$bulan_ulang_tahun = 4;
-$tahun_ulang_tahun = 2002;
-
-//menentukan tahun untuk mencari hari ulang tahun 
-$tahun_target = 2030;
-
-//memanggil fungsi untuk menemukan hari ulang tahun 
-$hasil_hari_ulang_tahun = 
-hari_ulang_tahun($tahun_target, $bulan_ulang_tahun, $tanggal_ulang_tahun);
-
-echo "Hari ulang tahun pada tanggal 
-$tanggal_ulang_tahun-$bulan_ulang_tahun $tahun_target adalah 
-$hasil_hari_ulang_tahun.";
-
+// Format the birthdate for display
+$targetBirthday = date('l, d F Y', $targetTimestamp);
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanggal Lahir</title>
+</head>
+<body>
+    <h3>
+    Ulang Tahun di Tahun 2030: <?= $targetBirthday; ?>
+
+    </h3>
+</body>
+</html>

@@ -23,12 +23,13 @@ $angka = [3,2,5,15,20,77,89];
         }
     </style>
 </head>
+
 <body>
      <!--<?php for($i=o; $i < 7;$i++){ ?>
       <div class="kontak">
         <?php $angka[$i]; ?>
       </div>
-    <?php }; ?> -->
+    <?php }; ?>-->
         <div class="clear"></div>
         <?php foreach ($angka as $a) : ?>
             <div class="kontak"><?= $a; ?></div>

@@ -1,5 +1,5 @@
 <?php
-$x = 60;
+$x = 100;
 if ($x < 50) {
     echo "Nilai Kamu Adalah E";
 } else if ($x < 60) {
